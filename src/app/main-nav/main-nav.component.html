@@ -1,0 +1,13 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <a mat-button class="principal" routerLink="/">{{title}}</a>
+      <span class="spacer"></span>
+      <a mat-button class="menu-item" routerLink="download">Download</a>
+      <a mat-button class="menu-item" routerLink="students-test">Student Stress Test</a>
+      <a mat-button class="menu-item" routerLink="about">About</a>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

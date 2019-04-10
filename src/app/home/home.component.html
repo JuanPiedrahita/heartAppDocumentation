@@ -1,0 +1,47 @@
+<mat-toolbar color="primary" class="toolbar-title">
+    The Heart App Project
+</mat-toolbar>
+<div class="container">
+		<h3>
+			IOT System for Self-diagnosis of Heart Diseases Using Mathematical Evaluation
+			of Cardiac Dynamics Based on Probability Theory
+		</h3>
+		<p>
+			<strong>
+				Justification
+			</strong>
+		</p>
+		<p>
+			Cardiovascular diseases are one of the most frequent worldwide death causes, this owing to a late detection of that illnesses, however, the majority of people do not carry out proper cardiovascular health check-ups due to a lack of time or resources. For that reason, we propose an IoT services oriented system which throughout patient’s mobile device and heart rate monitor, using an analysis methodology based on the probability theory, allows the patient to take preventive check-ups in his own anytime, and lets him know when it is necessary to consult medical services, all of that supported in a proved and reliable diagnosis.
+		</p>
+		<p>
+			<strong>
+				System Description
+			</strong>
+		</p>
+		<p>
+			The system has two parts, the first part is the architecture which describe all the
+			components and the way that they communicate to each other, the second part is the
+			data analysis, each part will be explained in the following sections.
+		</p>
+		<ol>
+			<li>
+				<strong>Architecture.</strong> The system has five components, these components interact with one another in different ways and allow the system to collect and show information to the user, as seen in the Figure below. the heart rate measurements are collected by the sensor that the user wears, then the information is read by an android device and sent to a server where the data is processed and stored in a database. The communication between the android device and the server is done through internet and brings the user the advantage of wearing the device in any place and still collecting and storing data. The system architecture has the following components:
+				<ul>
+					<li>Heart Rate Sensor.</li>
+					<li>Android Device with Heart Rate Diagnosis App.</li>
+					<li>REST API.</li>
+					<li>DB server.</li>
+					<li>Web Client.</li>
+				</ul>
+				<br>
+				<div class="center">
+					<img src="assets/images/architecture.jpg" alt="Architecture">
+				</div>
+				<br>
+			</li>
+			<li>
+				<strong>Data Analysis.</strong> One of the most important part in the system is the data analysis which allow the user to know a preventive diagnosis of his cardiovascular health, in the REST API the cardiac measurements already stored in the database are analyzed with the use of a method based on the theory of probability. The methodology proposed is used to analyze the data of the heart rate of cardiac measurements of a patient in a minimum of 21 h, and to establish if a patient is in heart disease status, healthy or is in progress towards heart disease.
+			</li>
+		</ol>
+</div>

@@ -1,1 +1,93 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+    margin: 0;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.container {
+    margin: 1em;
+}
+
+.toolbar-title{
+    height: 10px;
+    font-size: 20px;
+    font-weight: inherit;
+}
+
+.center {
+    text-align: center
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+//Mat form
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container > * {
+    width: 100%;
+}
+
+// mat table
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+.parent-table-container {
+    position: relative;
+    min-height: 200px;
+}
+
+.table-container {
+    position: relative;
+    max-height: 400px;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+}
+
+.loading-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 56px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rate-limit-reached {
+    color: #980000;
+    max-width: 360px;
+    text-align: center;
+}
+
+.mat-column-number,
+.mat-column-state {
+    max-width: 64px;
+}
+
+.mat-column-created {
+    max-width: 124px;  
+}
+
